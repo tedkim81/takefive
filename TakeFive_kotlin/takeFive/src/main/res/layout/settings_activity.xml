@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    >
+    <!-- 모달 제외한 영역 {{ -->
+    <LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:background="#fcfce1"
+		>
+		<!-- 상단헤더 {{ -->
+		<LinearLayout
+		    style="@style/Common.Hea.der"
+		    >
+		    <ImageView 
+		        android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_marginLeft="15dp"
+				android:src="@drawable/icon_settings_white"
+				android:scaleType="fitXY"
+		        />
+		    <TextView
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:text="@string/btn_settings"
+				style="@style/Common.TitleText"
+		        />
+		</LinearLayout>
+		<!-- }} 상단헤더 -->
+		
+		<!-- 스크롤 되는 목록 (아이템구매 제외한 영역) {{ -->
+		<ScrollView
+		    android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+		    >
+		    <LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				>
+				<!-- 배경 음악 {{ -->
+				<RelativeLayout
+				    android:id="@+id/btn_bgm"
+				    android:layout_marginTop="15dp"
+				    style="@style/Settings.ButtonLayout"
+				    >
+				    <TextView
+				        android:text="@string/btn_bgm"
+				        style="@style/Settings.ButtonText"
+				        />
+				    <TextView
+				        android:id="@+id/bgm_on"
+				        style="@style/Settings.ButtonState.On"
+				        />
+				    <TextView
+				        android:id="@+id/bgm_off"
+				        style="@style/Settings.ButtonState.Off"
+				        />
+				</RelativeLayout>
+				<!-- }} 배경 음악 -->
+				
+				<!-- 게임 음향 {{ -->
+				<RelativeLayout
+				    android:id="@+id/btn_game_sound"
+				    android:layout_marginTop="10dp"
+				    style="@style/Settings.ButtonLayout"
+				    >
+				    <TextView
+				        android:text="@string/btn_game_sound"
+				        style="@style/Settings.ButtonText"
+				        />
+				    <TextView
+				        android:id="@+id/game_sound_on"
+				        style="@style/Settings.ButtonState.On"
+				        />
+				    <TextView
+				        android:id="@+id/game_sound_off"
+				        style="@style/Settings.ButtonState.Off"
+				        />
+				</RelativeLayout>
+				<!-- }} 게임 음향 -->
+				
+				<!-- 대결 요청 팝업 {{ -->
+				<RelativeLayout
+				    android:id="@+id/btn_invited_ok"
+				    android:layout_marginTop="10dp"
+				    style="@style/Settings.ButtonLayout"
+				    >
+				    <TextView
+				        android:text="@string/btn_invited_ok"
+				        style="@style/Settings.ButtonText"
+				        />
+				    <TextView
+				        android:id="@+id/invited_ok_on"
+				        style="@style/Settings.ButtonState.On"
+				        />
+				    <TextView
+				        android:id="@+id/invited_ok_off"
+				        style="@style/Settings.ButtonState.Off"
+				        />
+				</RelativeLayout>
+				<!-- }} 대결 요청 팝업 -->
+				
+				<!-- 1단계 도우미 기능 {{ -->
+				<RelativeLayout
+				    android:id="@+id/btn_first_stage_helper"
+				    android:layout_marginTop="10dp"
+				    style="@style/Settings.ButtonLayout"
+				    >
+				    <TextView
+				        android:text="@string/btn_first_stage_helper"
+				        style="@style/Settings.ButtonText"
+				        />
+				    <TextView
+				        android:id="@+id/first_stage_helper_on"
+				        style="@style/Settings.ButtonState.On"
+				        />
+				    <TextView
+				        android:id="@+id/first_stage_helper_off"
+				        style="@style/Settings.ButtonState.Off"
+				        />
+				</RelativeLayout>
+				<!-- }} 1단계 도우미 기능 -->
+				
+				<!-- 아이템 구매 {{ -->
+				<LinearLayout
+				    android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="20dp"
+					android:layout_marginBottom="15dp"
+					android:orientation="vertical"
+				    >
+				    <TextView
+					    android:id="@+id/text_buy_item"
+					    android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="15dp"
+						android:layout_marginRight="15dp"
+						android:gravity="center_horizontal"
+						style="@style/Settings.BuyItemText"
+						android:background="@drawable/bg_chat_below"
+						/>
+					<Button
+					    android:id="@+id/btn_buy_item"
+						android:layout_marginTop="5dp"
+						android:text="@string/btn_buy_item"
+						android:textSize="20sp"
+						android:textColor="#766c63"
+						style="@style/Settings.ButtonLayout"
+						/>
+				</LinearLayout>
+				<!-- }} 아이템 구매 -->
+		        
+			</LinearLayout>
+		</ScrollView>
+		<!-- }} 스크롤 되는 목록 (아이템구매 제외한 영역) -->
+		
+	</LinearLayout>
+    <!-- }} 모달 제외한 영역 -->
+    
+    <!-- 모달 영역 {{ -->
+    <com.teuskim.takefive.view.UfoAlertView
+        android:id="@+id/ufo_alert"
+        android:layout_width="match_parent"
+		android:layout_height="match_parent"
+        />
+    <!-- }} 모달 영역 -->
+    
+</RelativeLayout>

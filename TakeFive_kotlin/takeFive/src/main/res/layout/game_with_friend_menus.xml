@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#fcfce1"
+	>
+	<!-- 상단헤더 {{ -->
+	<LinearLayout
+	    style="@style/Common.Hea.der"
+	    >
+	    <ImageView 
+	        android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_marginLeft="15dp"
+			android:src="@drawable/icon_game_2_white"
+			android:scaleType="fitXY"
+	        />
+	    <TextView
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:text="@string/btn_game_with_friend"
+			style="@style/Common.TitleText"
+	        />
+	</LinearLayout>
+	<!-- }} 상단헤더 -->
+    
+	<!-- 친구초대 {{ -->
+	<Button
+	    android:id="@+id/btn_invite_friends"
+		android:layout_marginTop="15dp"
+		android:text="@string/btn_apply_to_friend"
+		style="@style/Common.Button"
+		/>
+	<!-- }} 친구초대 -->
+	
+	<!-- 받은초대장 {{ -->
+	<Button
+	    android:id="@+id/btn_see_invitations"
+	    android:layout_marginTop="10dp"
+		android:text="@string/btn_applied_from_friend"
+		style="@style/Common.Button"
+		/>
+	<!-- }} 받은초대장 -->
+	
+	<!-- 컴퓨터와 대결하기 {{ -->
+	<Button
+	    android:id="@+id/btn_game_with_com"
+		android:layout_marginTop="10dp"
+		android:text="@string/btn_game_with_com"
+		style="@style/Common.Button"
+		/>
+	<!-- }} 컴퓨터와 대결하기 -->
+	
+	<View
+	    android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+	    />
+	
+	<!-- 구글플러스 실행 {{ -->
+	<TextView
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:gravity="center_horizontal"
+		android:textSize="20sp"
+		android:textColor="#766c63"
+		android:text="@string/text_recommend_googleplus"
+		android:background="@drawable/bg_chat_below"
+		/>
+	<Button
+	    android:id="@+id/btn_launch_googleplus"
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:layout_marginBottom="15dp"
+		android:text="@string/btn_launch_googleplus"
+		android:textColor="#ffffff"
+		android:textSize="20sp"
+		android:padding="10dp"
+		android:background="@drawable/common_google_signin_btn_text_dark"
+		/>
+	<!-- }} 구글플러스 실행 -->
+	
+</LinearLayout>

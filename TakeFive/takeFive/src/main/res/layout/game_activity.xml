@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    >
+    <!-- 모달 제외한 전체영역 {{ -->
+    <LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		>
+		<!-- 헤더 {{ -->
+		<LinearLayout
+		    android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#717373"
+		    >
+		    <!-- 단계표시 {{ -->
+		    <TextView 
+		        android:id="@+id/stage"
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:textSize="22sp"
+				android:textColor="#ffffff"
+				android:background="@drawable/bg_level"
+		        />
+		    <!-- }} 단계표시 -->
+		    
+		    <!-- 미션내용 {{ -->
+		    <TextView
+		        android:id="@+id/stage_mission" 
+		        android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="10dp"
+				android:maxLines="2"
+				android:ellipsize="end"
+				style="@style/Game.TitleMissionText"
+		        />
+		    <!-- }} 미션내용 -->
+		    
+		</LinearLayout>
+		<!-- }} 헤더 -->
+		
+		<!-- 헤더와 오목판 사이 {{ -->
+		<RelativeLayout
+		    android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+		    >
+		    <LinearLayout 
+			    android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:paddingLeft="15dp"
+				android:paddingRight="15dp"
+				android:paddingTop="10dp"
+				android:paddingBottom="10dp"
+				android:orientation="vertical"
+				android:background="#fcfce1"
+			    >
+			    <!-- 한수무르기와 나가기 버튼 {{ -->
+			    <LinearLayout 
+			        android:layout_width="match_parent"
+					android:layout_height="0dp"
+					android:layout_weight="1"
+			        >
+			        <!-- 한수무르기 {{ -->
+			        <LinearLayout 
+			            android:id="@+id/btn_go_back_to"
+			            android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:layout_marginRight="10dp"
+						android:gravity="center"
+						android:orientation="vertical"
+						android:background="@drawable/btn_missiongame_goback"
+			            >
+			            <TextView 
+			                android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/text_go_back_to"
+							style="@style/Game.ButtonText"
+			                />
+			            <TextView 
+			                android:id="@+id/go_back_to_count"
+			                android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							style="@style/Game.SubButtonText"
+			                />
+			        </LinearLayout>
+			        <!-- }} 한수무르기 -->
+			        
+			        <!-- 나가기 {{ -->
+			        <Button
+			            android:id="@+id/btn_exit"
+			            android:layout_width="120dp"
+						android:layout_height="match_parent"
+						android:background="@drawable/btn_missiongame_exit"
+						android:text="@string/text_exit"
+						style="@style/Game.ButtonText"
+			            />
+			        <!-- }} 나가기 -->
+			        
+			    </LinearLayout>
+			    <!-- }} 한수무르기와 나가기 버튼 -->
+		        
+				<!-- 미션수행상태 ( 점수,재료,시간 ) {{ -->
+				<LinearLayout
+				    style="@style/Game.MissionLayout"
+					>
+					<!-- 점수 {{ -->
+					<LinearLayout 
+					    android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:orientation="vertical"
+						android:gravity="center_horizontal"
+						android:padding="10dp"
+						android:background="@drawable/bg_rounded"
+						>
+					    <TextView
+					        android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							style="@style/Game.TableTitle"
+							android:text="@string/title_cost"
+					        />
+					    <RelativeLayout 
+					        android:layout_width="wrap_content"
+							android:layout_height="0dp"
+							android:layout_weight="1"
+					        >
+					        <TextView
+						        android:id="@+id/cost"
+						        android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_alignParentBottom="true"
+								style="@style/Game.TableNumberBig"
+								android:text="0"
+						        />
+					        <ImageView 
+					            android:id="@+id/cost_mask"
+						        android:layout_width="wrap_content"
+								android:layout_height="match_parent"
+								android:layout_alignLeft="@id/cost"
+								android:layout_alignRight="@id/cost"
+								android:background="#dd766c63"
+					            />
+					    </RelativeLayout>
+					</LinearLayout>
+					<!-- }} 점수 -->
+					
+					<!-- 재료 {{ -->
+					<LinearLayout 
+					    android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="10dp"
+						android:orientation="vertical"
+						android:gravity="center_horizontal"
+						android:padding="10dp"
+						android:background="@drawable/bg_rounded"
+						>
+					    <TextView
+					        android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							style="@style/Game.TableTitle"
+							android:text="@string/title_material"
+					        />
+					    <RelativeLayout
+					        android:layout_width="match_parent"
+							android:layout_height="0dp"
+							android:layout_weight="1"
+							>
+					        <LinearLayout
+					            android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_alignParentBottom="true"
+								android:layout_centerHorizontal="true"
+						        >
+						        <TextView
+						            android:id="@+id/material_num_1"
+						            android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									style="@style/Game.TableNumberSmall"
+									android:drawableLeft="@drawable/material_red"
+									android:text="0"
+						            />
+						        <TextView
+						            android:id="@+id/material_num_2"
+						            android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									style="@style/Game.TableNumberSmall.Mid"
+									android:drawableLeft="@drawable/material_green"
+									android:text="0"
+						            />
+						        <TextView
+						            android:id="@+id/material_num_3"
+						            android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									style="@style/Game.TableNumberSmall"
+									android:drawableLeft="@drawable/material_blue"
+									android:text="0"
+						            />
+						    </LinearLayout>
+						    
+					        <ImageView 
+					            android:id="@+id/material_num_mask"
+						        android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:background="#dd766c63"
+					            />
+					    </RelativeLayout>
+					</LinearLayout>
+					<!-- }} 재료 -->
+					
+					<!-- 시간 {{ -->
+					<LinearLayout 
+					    android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:orientation="vertical"
+						android:gravity="center_horizontal"
+						android:padding="10dp"
+						android:background="@drawable/bg_rounded"
+						>
+					    <TextView
+					        android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							style="@style/Game.TableTitle"
+							android:text="@string/title_time"
+					        />
+					    <RelativeLayout
+					        android:layout_width="wrap_content"
+							android:layout_height="0dp"
+							android:layout_weight="1"
+					        >
+					        <TextView
+						        android:id="@+id/remain_time"
+						        android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_alignParentBottom="true"
+								style="@style/Game.TableNumberBig"
+								android:text="0"
+						        />
+					        <ImageView 
+					            android:id="@+id/remain_time_mask"
+						        android:layout_width="wrap_content"
+								android:layout_height="match_parent"
+								android:layout_alignLeft="@id/remain_time"
+								android:layout_alignRight="@id/remain_time"
+								android:background="#dd766c63"
+					            />
+					    </RelativeLayout>
+					</LinearLayout>
+					<!-- }} 시간 -->
+					
+				</LinearLayout>
+				<!-- }} 미션수행상태 ( 점수,재료,시간 ) -->
+				
+			</LinearLayout>
+			
+		    <!-- 훈수두기 메시지 {{ -->
+		    <RelativeLayout
+		        android:id="@+id/recommend_here"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:visibility="invisible"
+		        >
+		        <TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:padding="7dp"
+			        android:gravity="center"
+			        android:text="@string/text_recommend_here"
+			        style="@style/Game.RecommendText"
+			        android:background="#cc009999"
+			        />
+		        
+		        <!-- 닫기버튼 {{ -->
+		        <Button
+		            android:id="@+id/btn_close_recommend"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerVertical="true"
+			        android:background="@drawable/btn_close_recommend"
+			        />
+		        <!-- }} 닫기버튼 -->
+		        
+		    </RelativeLayout>
+		    <!-- }} 훈수두기 메시지 -->
+		    
+		</RelativeLayout>
+		<!-- }} 헤더와 오목판 사이 -->
+		
+		<!-- 오목판 ( 소스코드에서 크기계산 ) {{ -->
+		<com.teuskim.takefive.view.BoardView
+		    android:id="@+id/board_view" 
+		    android:layout_width="320dp"
+			android:layout_height="320dp"
+		    />
+		<!-- }} 오목판 ( 소스코드에서 크기계산 ) -->
+		
+	</LinearLayout>
+    <!-- }} 모달 제외한 전체영역 -->
+    
+    <!-- 모달 영역 {{ -->
+    <com.teuskim.takefive.view.UfoAlertView
+        android:id="@+id/ufo_alert"
+        android:layout_width="match_parent"
+		android:layout_height="match_parent"
+        />
+    <!-- }} 모달 영역 -->
+    
+</RelativeLayout>

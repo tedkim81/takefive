@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    >
+    <!-- 모달 제외한 영역 {{ -->
+    <LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:background="#fcfce1"
+		>
+		<!-- 상단헤더 {{ -->
+		<LinearLayout
+		    style="@style/Common.Hea.der"
+		    >
+		    <ImageView 
+		        android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_marginLeft="15dp"
+				android:src="@drawable/ic_launcher"
+				android:scaleType="fitXY"
+		        />
+		    <TextView
+		        android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:layout_marginLeft="10dp"
+				android:text="@string/app_name"
+				style="@style/Common.TitleText"
+		        />
+		    <Button
+		        android:id="@+id/btn_info"
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="5dp"
+				android:background="@drawable/btn_info"
+		        />
+		</LinearLayout>
+		<!-- }} 상단헤더 -->
+		
+		<!-- 광고 {{ -->
+	    <RelativeLayout
+	        android:id="@+id/ad_view_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="1dp"
+	        android:paddingBottom="1dp"
+	        android:background="#9e9789"
+	        >
+	        <TextView
+	            android:id="@+id/ad_text"
+	            android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:gravity="center"
+		        android:textSize="20sp"
+		        android:textColor="#ffffff"
+		        android:text="@string/text_ad_loading"
+	            />
+	        <com.google.android.gms.ads.AdView
+		        android:id="@+id/ad_view"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        ads:adSize="BANNER"
+		        ads:adUnitId="@string/ad_unit_id"
+		        />
+	    </RelativeLayout>
+	    <!-- }} 광고 -->
+	    
+	    <!-- 말풍선 {{ -->
+        <ScrollView 
+            android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:layout_marginTop="5dp"
+			android:layout_marginLeft="15dp"
+			android:layout_marginRight="15dp"
+			android:background="@drawable/bg_chat_main"
+			android:overScrollMode="never"
+            >
+            <TextView
+                android:id="@+id/main_message" 
+                android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				style="@style/Main.MessageText"
+				android:lineSpacingExtra="5dp"
+                />
+        </ScrollView>
+	    <!-- }} 말풍선 -->
+	    
+	    <!-- 버튼영역 {{ -->
+	    <LinearLayout
+	        android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:layout_marginLeft="15dp"
+			android:layout_marginRight="15dp"
+			android:layout_marginBottom="15dp"
+			android:orientation="vertical"
+	        >
+		    <!-- 버튼영역 위층 {{ -->
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:baselineAligned="false"
+		        >
+		        <!-- 미션게임버튼 {{ -->
+		        <LinearLayout
+		            android:id="@+id/btn_start_mission_game" 
+		            android:layout_width="0dp"
+					style="@style/Main.ButtonHeightBig"
+					android:layout_weight="1"
+					android:background="@drawable/btn_common"
+					android:orientation="vertical"
+					android:gravity="center"
+		            >
+		            <TextView
+		                android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						style="@style/Main.ButtonText"
+						android:text="@string/btn_mission_game"
+						android:drawableTop="@drawable/icon_game_1"
+						android:drawablePadding="5dp"
+						android:layout_marginBottom="10dp"
+		                />
+		            <TextView
+					    android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/text_best_score"
+						style="@style/Main.ButtonText2"
+					    />
+					<TextView
+					    android:id="@+id/best_score"
+					    android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						style="@style/Main.ButtonText3"
+						/>
+		        </LinearLayout>
+		        <!-- }} 미션게임버튼 -->
+		        
+		        <LinearLayout 
+		            android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_marginLeft="10dp"
+					android:orientation="vertical"
+		            >
+		            <!-- 업적버튼 {{ -->
+		            <TextView
+		                android:id="@+id/btn_achievement"
+			            android:layout_width="match_parent"
+						style="@style/Main.ButtonText.Small"
+						android:text="@string/btn_achievement"
+						android:gravity="center_vertical"
+						android:drawableLeft="@drawable/icon_achievement"
+						android:background="@drawable/btn_common"
+		                />
+		            <!-- }} 업적버튼 -->
+		            
+		            <!-- 랭킹버튼 {{ -->
+		            <TextView
+		                android:id="@+id/btn_leader_board"
+			            android:layout_width="match_parent"
+						android:layout_marginTop="10dp"
+						style="@style/Main.ButtonText.Small"
+						android:text="@string/btn_ranking"
+						android:gravity="center_vertical"
+						android:drawableLeft="@drawable/icon_ranking"
+						android:background="@drawable/btn_common"
+		                />
+		            <!-- }} 랭킹버튼 -->
+		            
+		        </LinearLayout>
+		        
+		    </LinearLayout>
+	        <!-- }} 버튼영역 위층 -->
+	        
+	        <!-- 버튼영역 아래층 {{ -->
+	        <LinearLayout 
+		        android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:baselineAligned="false"
+		        >
+		        <LinearLayout 
+		            android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:orientation="vertical"
+		            >
+		            <!-- 설정버튼 {{ -->
+		            <TextView
+		                android:id="@+id/btn_settings"
+			            android:layout_width="match_parent"
+						style="@style/Main.ButtonText.Small"
+						android:text="@string/btn_settings"
+						android:gravity="center_vertical"
+						android:drawableLeft="@drawable/icon_settings"
+						android:background="@drawable/btn_common"
+		                />
+		            <!-- }} 설정버튼 -->
+		            
+		            <!-- 공유버튼 {{ -->
+		            <TextView
+		                android:id="@+id/btn_share"
+			            android:layout_width="match_parent"
+						android:layout_marginTop="10dp"
+						style="@style/Main.ButtonText.Small"
+						android:text="@string/btn_share"
+						android:gravity="center_vertical"
+						android:drawableLeft="@drawable/icon_share"
+						android:background="@drawable/btn_common"
+		                />
+		            <!-- }} 공유버튼 -->
+		            
+		        </LinearLayout>
+		        
+		        <!-- 친구와대결버튼 {{ -->
+		        <LinearLayout
+		            android:id="@+id/btn_game_with_friends" 
+		            android:layout_width="0dp"
+					style="@style/Main.ButtonHeightBig"
+					android:layout_weight="1"
+					android:layout_marginLeft="10dp"
+					android:background="@drawable/btn_common"
+					android:orientation="vertical"
+					android:gravity="center"
+		            >
+		            <TextView
+		                android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						style="@style/Main.ButtonText"
+						android:text="@string/btn_game_with_friend"
+						android:drawableTop="@drawable/icon_game_2"
+						android:drawablePadding="5dp"
+						android:layout_marginBottom="10dp"
+		                />
+		            <TextView
+					    android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/text_wins_count"
+						style="@style/Main.ButtonText2"
+					    />
+		            <TextView
+					    android:id="@+id/wins_count"
+					    android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						style="@style/Main.ButtonText3"
+						/>
+		        </LinearLayout>
+		        <!-- }} 친구와대결버튼 -->
+		        
+		    </LinearLayout>
+	        <!-- }} 버튼영역 아래층 -->
+	        
+	    </LinearLayout>
+	    <!-- }} 버튼영역 -->
+	    
+	</LinearLayout>
+    <!-- }} 모달 제외한 영역 -->
+    
+    <!-- 모달 영역 {{ -->
+    <com.teuskim.takefive.view.UfoAlertView
+        android:id="@+id/ufo_alert"
+        android:layout_width="match_parent"
+		android:layout_height="match_parent"
+        />
+    <!-- }} 모달 영역 -->
+    
+</RelativeLayout>

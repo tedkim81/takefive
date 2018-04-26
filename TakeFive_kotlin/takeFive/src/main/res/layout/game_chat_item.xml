@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:paddingTop="5dp"
+	>
+	<!-- 중앙에 정렬되는 시스템 메시지 {{ -->
+	<TextView
+	    android:id="@+id/system_msg"
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:textSize="18sp"
+		android:textColor="#766c63"
+	    />
+	<!-- }} 중앙에 정렬되는 시스템 메시지 -->
+	
+	<!-- 좌측에 정렬되는 채팅 메시지 {{ -->
+	<TextView
+	    android:id="@+id/chat_msg"
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:textSize="20sp"
+		android:textColor="#37312b"
+	    />
+	<!-- }} 좌측에 정렬되는 채팅 메시지 -->
+	
+</RelativeLayout>

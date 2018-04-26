@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#fcfce1"
+	>
+	<!-- 상단 ( 턴정보, 정지버튼 ) {{ -->
+	<RelativeLayout
+	    android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:padding="10dp"
+		android:background="#717373"
+	    >
+	    <!-- 좌측 UFO {{ -->
+	    <ImageView
+	        android:id="@+id/ufo_opponent" 
+	        android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="25dp"
+			android:scaleType="fitXY"
+			android:src="@drawable/ufo_black_big"
+	        />
+	    <!-- }} 좌측 UFO -->
+	    
+	    <!-- 좌측 상대방 프로필이미지 {{ -->
+	    <ImageView
+	        android:id="@+id/profile_img_opponent" 
+	        android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_centerVertical="true"
+			android:padding="1dp"
+			android:background="#555555"
+	        />
+	    <!-- }} 좌측 상대방 프로필이미지 -->
+	    
+	    <!-- pause 버튼 {{ -->
+	    <Button
+	        android:id="@+id/btn_pause"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:background="@drawable/btn_pause"
+	        />
+	    <!-- }} pause 버튼 -->
+	    
+	    <!-- 우측 UFO {{ -->
+	    <ImageView
+	        android:id="@+id/ufo_me" 
+	        android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="25dp"
+			android:scaleType="fitXY"
+			android:src="@drawable/ufo_white_big"
+	        />
+	    <!-- }} 우측 UFO -->
+	    
+	    <!-- 우측 내 프로필이미지 {{ -->
+	    <ImageView
+	        android:id="@+id/profile_img_me" 
+	        android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:padding="1dp"
+			android:background="#555555"
+	        />
+	    <!-- }} 우측 내 프로필이미지 -->
+	    
+	</RelativeLayout>
+	<!-- }} 상단 ( 턴정보, 정지버튼 ) -->
+	
+	<!-- 프로필명과 남은시간 영역 {{ -->
+	<LinearLayout
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingTop="5dp"
+		android:paddingBottom="5dp"
+		android:gravity="center_vertical"
+		android:background="#3b3c3c"
+	    >
+	    <!-- 상대 프로필명 {{ -->
+	    <TextView 
+	        android:id="@+id/opponent_profile_name"
+	        style="@style/Game2.ProfileName"
+	        android:gravity="left"
+	        />
+	    <!-- }} 상대 프로필명 -->
+	    
+	    <!-- 남은시간 {{ -->
+	    <TextView 
+	        android:id="@+id/remain_time"
+	        style="@style/Game2.RemainTime"
+	        />
+	    <!-- }} 남은시간 -->
+	    
+	    <!-- 내 프로필명 {{ -->
+	    <TextView 
+	        android:id="@+id/my_profile_name"
+	        style="@style/Game2.ProfileName"
+	        android:gravity="right"
+	        />
+	    <!-- }} 내 프로필명 -->
+	    
+	</LinearLayout>
+	<!-- }} 프로필명과 남은시간 영역 -->
+	
+	<!-- 중단 채팅 {{ -->
+	<RelativeLayout
+	    android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:layout_marginTop="3dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginBottom="10dp"
+		android:background="@drawable/bg_chat"
+	    >
+	    <!-- 채팅목록 {{ -->
+	    <ListView
+	        android:id="@+id/list_chat"
+	        android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:paddingRight="50dp"
+			android:divider="@null"
+			android:listSelector="@android:color/transparent"
+			android:fadingEdge="vertical"
+			android:overScrollMode="never"
+			android:scrollbars="none"
+	        />
+	    <!-- }} 채팅목록 -->
+	    
+	    <!-- 녹음버튼 {{ -->
+	    <RelativeLayout
+	        android:id="@+id/btn_record_layout"
+	        android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentBottom="true"
+	        >
+	        <ImageView
+		        android:id="@+id/btn_record_start"
+		        android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:src="@drawable/img_mic_ready"
+				android:background="@drawable/btn_mic_bg"
+		        />
+	        <ImageView
+		        android:id="@+id/btn_record_cancel"
+		        android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:src="@drawable/img_mic_stop"
+				android:background="@drawable/btn_mic_bg"
+				android:visibility="gone"
+		        />
+	    </RelativeLayout>
+	    <!-- }} 녹음버튼 -->
+	    
+	    <!-- 로딩표시와 목소리표시 {{ -->
+	    <RelativeLayout
+	        android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_toLeftOf="@id/btn_record_layout"
+	        >
+	        <ImageView
+	            android:id="@+id/speech_state"
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:src="@drawable/speech_state_3"
+				android:visibility="invisible"
+	            />
+	        <ProgressBar 
+	            android:id="@+id/loading_speech"
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				style="?android:attr/progressBarStyle"
+				android:visibility="invisible"
+	            />
+	    </RelativeLayout>
+	    <!-- }} 로딩표시와 목소리표시 -->
+	    
+	</RelativeLayout>
+	<!-- }} 중단 채팅 -->
+	
+	<!-- 하단 오목판 ( 소스코드에서 크기계산 ) {{ -->
+	<com.teuskim.takefive.view.BoardView
+	    android:id="@+id/board_view" 
+	    android:layout_width="320dp"
+		android:layout_height="320dp"
+	    />
+	<!-- }} 하단 오목판 ( 소스코드에서 크기계산 ) -->
+</LinearLayout>

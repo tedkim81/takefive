@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sayings">
+        <item><![CDATA["Success is the ability to go from one failure to another with no loss of enthusiasm.<br/>- Winston Churchill"]]></item>
+        <item><![CDATA["Many of life's failures are people who did not realize how close they were to success when they gave up.<br/>- Thomas Edison"]]></item>
+        <item><![CDATA["\"Never Play With The Feelings Of Others Because You May Win The Game But The Risk Is That You Will Surely Lose The Person For A Life Time\".<br/>- William Shakespeare"]]></item>
+        <item><![CDATA["Opportunities Are Like Sunrises, If You Wait Too Long You Can Miss Them.<br/>- William Arthur"]]></item>
+        <item><![CDATA["Laughing Faces Do Not Mean That There Is Absence Of Sorrow! But It Means That They Have The Ability To Deal With It.<br/>- William Shakespeare"]]></item>
+        <item><![CDATA["The world is full of suffering but it is also full of people overcoming it.<br/>- Helen Adams Keller"]]></item>
+        <item><![CDATA["If you would win a man to your cause, first convince him that you are his sincere friend.<br/>- Abraham Lincoln"]]></item>
+        <item><![CDATA["It is no use saying, \"We are doing our best.\" You have got to succeed in doing what is necessary.<br/>- Winston Churchill"]]></item>
+        <item><![CDATA["A good plan, violently executed now, is better than a perfect plan next week.<br/>- George Smith Patton Jr."]]></item>
+        <item><![CDATA["God doesn't require us to succeed; he only requires that you try.<br/>- Mother Teresa"]]></item>
+        <item><![CDATA["You may delay,<br/>but time will not.<br/>- Benjamin Franklin"]]></item>
+        <item><![CDATA["Dream as if you'll live forever. Live as if you'll die today.<br/>- James Byron Dean"]]></item>
+        <item><![CDATA["I'm convinced that the only thing that kept me going was that I loved what I did.<br/>- Steve Jobs"]]></item>
+        <item><![CDATA["Life is like riding a bicycle. To keep your balance you must keep moving.<br/>- Albert Einstein"]]></item>
+        <item><![CDATA["Freedom is not worth having if it does not include the freedom to make mistakes.<br/>- Mahatma Gandhi"]]></item>
+        <item><![CDATA["Think like a man of action and act like man of thought."]]></item>
+        <item><![CDATA["Life is the art of drawing sufficient conclusions from insufficient premises."]]></item>
+        <item><![CDATA["Error is the discipline through which we advance."]]></item>
+        <item><![CDATA["Nature never deceives us; it is always we who deceive ourselves."]]></item>
+        <item><![CDATA["Books are ships which pass through the vast seas of time."]]></item>
+        <item><![CDATA["The world is a beautiful book, but of little use to him who cannot read it."]]></item>
+        <item><![CDATA["To be trusted is a greater compliment than to be loved."]]></item>
+        <item><![CDATA["You will never know until you try."]]></item>
+        <item><![CDATA["To climb steep hills requires slow pace at first."]]></item>
+        <item><![CDATA["If you do not walk today, you will have to run tomorrow."]]></item>
+        <item><![CDATA["If the wind will not serve, take to the oars."]]></item>
+        <item><![CDATA["He is greatest who is most often in men's good thoughts."]]></item>
+        <item><![CDATA["In the morning of life, work; in the midday, give counsel; in the evening, pray."]]></item>
+        <item><![CDATA["Try not to become a man of success but rather try to become a man of value."]]></item>
+        <item><![CDATA["Happiness and misery are not fated but self-sought."]]></item>
+        <item><![CDATA["Only the person who has faith in himself is able to be faithful to others."]]></item>
+        <item><![CDATA["The regret after not doing something is bigger than that of doing something."]]></item>
+        <item><![CDATA["Have fun this time, because it will never come again."]]></item>
+        <item><![CDATA["Effort is the best way to realizing your dreams."]]></item>
+        <item><![CDATA["Today, which was proved to be fruitless, is the day that the dead in the past was longing for."]]></item>
+        <item><![CDATA["Luck is when preparedness meets opportunity."]]></item>
+        <item><![CDATA["There is no best choice, but only a choice not to regret."]]></item>
+        <item><![CDATA["Today is the first day of the rest of your life."]]></item>
+        <item><![CDATA["For what is the best choice, for each individual is the highest it is possible for him to achieve."]]></item>
+        <item><![CDATA["'Trial and error' is a ladder that reaching for the truth."]]></item>
+        <item><![CDATA["Only the man who can kiss one's dream will come true that."]]></item>
+        <item><![CDATA["Whenever you faced a big trouble, think about someone's sight always!"]]></item>
+        <item><![CDATA["There isn't a person anywhere that isn't capable of doing more than he think he can."]]></item>
+        <item><![CDATA["All men who have achieved great things have been great dreamers."]]></item>
+        <item><![CDATA["Winners have simply formed the habit of doing things losers don't like to do."]]></item>
+        <item><![CDATA["Impossible is the excuse who do not try hard enough."]]></item>
+        <item><![CDATA["A man is twice miserable when he fears his misery before it comes."]]></item>
+        <item><![CDATA["Laugh and the world laugh with you; weep, and you weep alone."]]></item>
+        <item><![CDATA["Time flies like an arrow and time lost never returns."]]></item>
+        <item><![CDATA["Nothing costs so much as what is given to us."]]></item>
+        <item><![CDATA["God gives every bird his worm, but he does not throw it into the nest."]]></item>
+        <item><![CDATA["The grass is always greener on the other side."]]></item>
+        <item><![CDATA["In good fortune, prudence; in ill fortune, patience."]]></item>
+        <item><![CDATA["Good and evil are chiefly in the imagination."]]></item>
+        <item><![CDATA["Be not the first to quarrel nor the last to make it up."]]></item>
+        <item><![CDATA["Riches serve a wise man, and govern a fool."]]></item>
+        <item><![CDATA["Don't throw away the old shoes till you've got new ones."]]></item>
+    </string-array>
+</resources>

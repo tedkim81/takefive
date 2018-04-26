@@ -1,0 +1,201 @@
+<resources>
+
+    <!-- 공통 -->
+    <string name="app_name">미션 오목</string>
+    <string name="app_desc">미션 오목(TAKE FIVE)은 신개념 오목 게임입니다.</string>
+    
+    <string name="err_please_retry">실행 중 오류가 발생했습니다.\n잠시 후 다시 시도해 주세요.</string>
+    <string name="btn_ok">확인</string>
+    <string name="btn_cancel">취소</string>
+    
+    <!-- 메인화면 -->
+    <string name="btn_mission_game">미션 게임</string>
+    <string name="text_best_score">최고 점수</string>
+    <string name="text_get_score">획득 점수</string>
+    <string name="text_final_score">최종 점수</string>
+    <string name="text_score_format">%d 점</string>
+    <string name="btn_achievement">업 적</string>
+    <string name="btn_ranking">랭 킹</string>
+    <string name="btn_settings">설 정</string>
+    <string name="btn_share">공 유</string>
+    <string name="btn_game_with_friend">친구와 대결</string>
+    <string name="text_wins_count">승리</string>
+    <string name="text_wins_count_format">%d 승</string>
+    
+    <string name="main_message_1"><![CDATA["안녕하세요, 미션오목입니다.<br>처음이시죠?<br><font color=\"#e60012\">미션게임</font>을 해보세요~!"]]></string>
+    <string name="main_message_2"><![CDATA["안녕하세요, 미션오목입니다.<br>이제 <font color=\"#e60012\">업적</font>을 하나하나<br>수행해 보세요~!"]]></string>
+    <string name="main_message_3"><![CDATA["안녕하세요, 미션오목입니다.<br>지금 점수가 몇등인지<br>궁금하지 않으세요?<br><font color=\"#e60012\">랭킹</font>을 확인해 보세요~!"]]></string>
+    <string name="main_message_4"><![CDATA["안녕하세요, 미션오목입니다.<br>친구들에게 미션오목을<br><font color=\"#e60012\">공유</font>하고 함께 즐겨보세요~!"]]></string>
+    <string name="main_message_5"><![CDATA["광고를 보기 싫으신가요?<br><font color=\"#e60012\">아이템을 구매</font>하시면<br>한 수 무르기 횟수가 10회로 늘어나고<br>광고 대신에 명언이나 좋은 글들을<br>제공해 드립니다."]]></string>
+    <string name="main_message_6"><![CDATA["<font color=\"#e60012\">아이템을 구매</font>하시면<br>한 수 무르기 횟수가 10회로 늘어나고<br>광고 대신에 명언이나 좋은 글들을<br>제공해 드립니다."]]></string>
+    
+    <string name="text_ad_loading">광고 가져오는 중..</string>
+    <string name="title_today_saying"><![CDATA["<font color=\"#b77250\">[오늘의 좋은 글]</font><br/>"]]></string>
+    <string name="title_today_saying_for_share"><![CDATA["[오늘의 좋은 글]"]]></string>
+    <string name="title_saying_share_dialog"><![CDATA["친구에게 좋은 글 공유하기"]]></string>
+    
+    <!-- 미션게임 -->
+    <string name="title_notice_comment">알림</string>
+    <string name="title_stage_format">%d 단계</string>
+    <string name="title_notice_mission_format">%d 단계 미션!</string>
+    <string name="title_notice_mission_clear_format">%d 단계 미션 성공!</string>
+    <string name="title_notice_mission_fail_format">%d 단계 미션 실패!</string>
+    <string name="title_notice_game_clear">모든 미션을 성공하셨습니다!</string>
+    <string name="text_ufo_modal_top">어두운 부분을 터치하시면\n가려진 부분들을 볼 수 있어요.</string>
+    <string name="text_confirm_exit"><![CDATA["<font color=\"#e60012\">미션게임</font>을<br>종료하시겠습니까?"]]></string>
+    
+    <string name="text_base_score">기본 점수</string>
+    <string name="text_cost_mission_score">비용 미션</string>
+    <string name="text_material_mission_score">재료 미션</string>
+    <string name="text_time_mission_score">시간 미션</string>
+    <string name="text_mission_score_format">+ (%s)</string>
+    <string name="text_bonus_mission">보너스 미션</string>
+    <string name="text_bonus_mission_success">성공( X 2 )</string>
+    <string name="text_bonus_mission_fail">실패( X 1 )</string>
+    <string name="title_bonus_mission">보너스 미션!</string>
+    
+    <string name="title_cost">비용</string>
+    <string name="title_material">재료</string>
+    <string name="title_time">시간</string>
+    
+    <string name="err_unable_to_put">이미 점령된 지역입니다.\n다른 곳을 선택해 주세요.</string>
+    <string name="text_continue">계속하기</string>
+    <string name="text_exit">나가기</string>
+    <string name="text_go_back_to">한 수 무르기</string>
+    <string name="text_go_back_to_count">( %d회 사용가능 )</string>
+    <string name="text_go_back_to_fail">한 수를 무를 수 없습니다.</string>
+    <string name="text_go_back_to_no_item_1">2회 모두 사용하셨습니다.\n설정에서 아이템을 구매하시면\n10회로 늘어납니다.</string>
+    <string name="text_go_back_to_no_item_2">한 수를 무를 수 없습니다.\n10회 모두 사용하셨습니다.</string>
+    <string name="text_go_back_to_complete">한 수를 물렀습니다.</string>
+    
+    <string name="stage_mission_1_short">연속된 다섯지역을 점령하여 승리하세요!</string>
+    <string name="stage_mission_1">가로 또는 세로\n또는 대각선으로\n연속된 다섯지역을\n점령하여 승리하세요!</string>
+    
+    <string name="stage_mission_2_comment">훗! 너무 쉬웠나요?\n이제부터 시작입니다.\n미션을 잘보고 성공해 보세요!</string>
+    
+    <string name="stage_mission_2_short">주어진 비용 안에서 승리하세요!</string>
+    <string name="stage_mission_2">주어진 비용($99) 안에서\n연속된 다섯지역을\n점령하여 승리하세요!</string>
+    
+    <string name="stage_mission_3_short">주어진 재료들만을 사용하여 승리하세요!</string>
+    <string name="stage_mission_3">주어진 재료들만을 사용하고\n연속된 다섯지역을\n점령하여 승리하세요!</string>
+    <string name="stage_material_sub_mission">점령된 다섯지역이\n모두 같은 재료일 경우,\n두배의 점수를\n드립니다.</string>
+    
+    <string name="stage_mission_4_comment">오~ 좋습니다.\n이제 제대로 해볼까요?</string>
+    
+    <string name="stage_mission_4_short">연속된 다섯지역을 점령하여 승리하세요!</string>
+    <string name="stage_mission_4">연속된 다섯지역을\n점령하여 승리하세요!</string>
+    
+    <string name="stage_mission_5_short">99초 안에 승리하세요!</string>
+    <string name="stage_mission_5">99초 안에\n연속된 다섯지역을\n점령하여 승리하세요!</string>
+    
+    <string name="stage_mission_6_short">99초 안에 주어진 비용 안에서 승리하세요!</string>
+    <string name="stage_mission_6">99초 안에\n주어진 비용($80) 안에서\n연속된 다섯지역을\n점령하여 승리하세요!</string>
+    
+    <string name="stage_mission_7_short">99초 안에 주어진 재료들만을 사용하고 승리하세요!</string>
+    <string name="stage_mission_7">99초 안에\n주어진 재료들만을 사용하고\n연속된 다섯지역을\n점령하여 승리하세요!</string>
+    
+    <string name="stage_mission_8_comment">이..이럴수가..\n이제부터 전력을 다해 드리죠!\n그리고, 이제 제가 먼저 시작할 겁니다.</string>
+    
+    <string name="stage_mission_8_short">60초 안에 승리하세요!</string>
+    <string name="stage_mission_8">60초 안에\n연속된 다섯지역을\n점령하여 승리하세요!</string>
+    
+    <string name="stage_mission_9_short">60초 안에 주어진 비용을 초과하지 않고 승리하세요!</string>
+    <string name="stage_mission_9">60초 안에\n주어진 비용($60) 안에서\n연속된 다섯지역을\n점령하여 승리하세요!</string>
+    
+    <string name="stage_mission_10_short">60초 안에 주어진 재료들만을 사용하고 승리하세요!</string>
+    <string name="stage_mission_10">60초 안에\n주어진 재료들만을 사용하고\n연속된 다섯지역을\n점령하여 승리하세요!</string>
+    
+    <string name="text_recommend_here">1단계는 제가 도와드릴게요.\n여기를 추천합니다.</string>
+    <string name="text_confirm_close_message"><![CDATA["1단계 도우미 기능을<br><font color=\"#e60012\">OFF</font>합니다.<br>설정에서 다시 <font color=\"#22ac38\">ON</font>/<font color=\"#e60012\">OFF</font><br>하실 수 있습니다."]]></string>
+    
+    <!-- 친구와 대결하기 -->
+    <string name="text_game_chat_1">대결이 시작되었습니다.</string>
+    <string name="text_game_chat_2">%s님이 먼저 시작합니다.</string>
+    
+    <string name="btn_apply_to_friend">친구에게 대결신청하기</string>
+    <string name="btn_applied_from_friend">받은 대결신청함</string>
+    <string name="btn_game_with_com">COM과 대결하기</string>
+    <string name="text_recommend_googleplus">초대할 친구가 보이지 않는다면\n구글플러스에서 친구를 검색한 후\n내 써클에 추가하세요.</string>
+    <string name="btn_launch_googleplus">구글플러스 실행하기</string>
+    <string name="text_win_friend">승리하셨습니다!!</string>
+    <string name="text_lose_friend">패배하셨습니다..</string>
+    <string name="text_lose_friend_2">아쉽지만 다음 기회에\n다시 도전하세요.</string>
+    <string name="text_invited_message">한판 할까요?</string>
+    <string name="btn_accept">수 락</string>
+    <string name="btn_decline">거 절</string>
+    <string name="text_withdraw">기권하기</string>
+    <string name="text_sender_cancel">취소된 요청입니다.</string>
+    <string name="format_my_profile_name">%s (나)</string>
+    <string name="format_remain_time">%d초</string>
+    <string name="text_wait">대기중</string>
+    <string name="text_me">나</string>
+    <string name="text_coms_talk">안타깝게도 저는 아직 %s님과 대화할 정도로 똑똑하지 않습니다. 진짜 친구와 대결하면서 대화도 즐겨보세요.</string>
+    <string name="err_voice_recognizer">음성인식을 하지 못했습니다.\n다시 시도해 주세요.</string>
+    
+    <!-- 설정 -->
+    <string name="btn_bgm">배경 음악</string>
+    <string name="btn_game_sound">게임 음향</string>
+    <string name="btn_invited_ok">대결 요청 수신</string>
+    <string name="btn_first_stage_helper">1단계 도우미 기능</string>
+    <string name="title_beginning_stage">시작 단계 선택</string>
+    <string name="text_cannot_beginning_stage">경험해 본 단계만\n선택 가능합니다.</string>
+    <string name="btn_buy_item">아이템 구매</string>
+    <string name="text_success_buy_item">아이템 구매 성공!</string>
+    <string name="text_cancel_buy_item">취소되었습니다.</string>
+    <string name="text_fail_buy_item">아이템을 구매하지 못했습니다.</string>
+    
+    <!-- 공유 -->
+    <string name="btn_share_facebook">페이스북</string>
+    <string name="btn_share_googleplus">구글플러스</string>
+    <string name="btn_share_kakaostory">카카오스토리</string>
+    <string name="btn_share_kakaolink">카카오톡 링크</string>
+    <string name="btn_share_linelink">네이버 라인 링크</string>
+    <string name="btn_share_wechatlink">위챗 링크</string>
+    <string name="btn_share_whatsapplink">왓츠앱 링크</string>
+    
+    <string name="text_cancelled">취소됨</string>
+    <string name="text_permission_not_granted">권한이 없어서 실행할 수 없습니다.</string>
+    <string name="text_facebook_not_available">페이스북이 설치되어 있지 않거나 오래된 버전이라서 공유하기를 실행할 수 없습니다.</string>
+    <string name="text_share_kakaolink_success">카카오톡으로 공유했습니다.</string>
+    <string name="text_share_kakaolink_fail">카카오톡으로 공유하지 못했습니다.</string>
+    
+    <string name="kakaostory_default_share_message">미션 오목 (TAKE FIVE) 게임을 추천합니다.</string>
+    <string name="kakaostory_err_not_user">카카오스토리 사용자가 아닙니다.</string>
+    <string name="kakaostory_post_success">카카오스토리에 추천글과 링크를 게시했습니다.</string>
+    <string name="link_recommend_text">신개념 오목 게임인 미션 오목(TAKE FIVE)의 재미를 느껴 보세요.</string>
+    <string name="kakaolink_button">게임하러 가기</string>
+
+    <string name="title_kakaostory_share">카카오스토리에 공유</string>
+    <string name="btn_kakaostory_share">공유하기</string>
+    <string name="text_kakaostory_share_hint">친구들에게 뭐라고 소개할까요?</string>
+    <string name="text_kakaostory_share_notice">미션오목 게임의 구글플레이 링크가 함께 공유됩니다.</string>
+    <string name="text_wechat_link_desc">친구에게 링크 공유하기</string>
+    
+    <!-- 게임설명 -->
+    <string name="title_info">게임 설명</string>
+    <string name="text_ufo_introduce">믿기 어렵겠지만,\n얘네들은 UFO입니다.</string>
+    <string name="title_common_rules">기본 규칙</string>
+    <string name="text_common_rules_1">1) 가로 또는 세로 또는 대각선으로 연속된 다섯지역을 먼저 점령하면 승리합니다.</string>
+    <string name="text_common_rules_2">2) 상대는 당신이 연속된 다섯지역을 점령하지 못하도록 막습니다.</string>
+    <string name="text_common_rules_3">3) 당신은 상대가 연속된 다섯지역을 점령하지 못하도록 막아야 합니다.</string>
+    <string name="title_mission_game">미션 게임</string>
+    <string name="text_mission_game_1">1) 미션을 달성하면 점수가 높아집니다.</string>
+    <string name="text_mission_game_2">2) 1단계에서 10단계까지 있고 미션을 달성하면서 각 단계를 통과하면 점수가 쌓입니다.</string>
+    <string name="title_cost_mission">비용 미션</string>
+    <string name="text_cost_mission_1">1) 미션 게임의 2단계, 6단계, 9단계에서 비용 미션을 성공해야 합니다.</string>
+    <string name="text_cost_mission_2">2) 지역을 점령할 때마다 그 지역의 숫자만큼 비용이 차감됩니다.</string>
+    <string name="text_cost_mission_3">3) 남은 비용이 0이 될때까지 승리하지 못하면 미션 실패입니다.</string>
+    <string name="title_material_mission">재료 미션</string>
+    <string name="text_material_mission_1">1) 미션 게임의 3단계, 7단계, 10단계에서 재료 미션을 성공해야 합니다.</string>
+    <string name="text_material_mission_2">2) 지역을 점령할 때마다 그 지역의 재료가 하나씩 차감됩니다.</string>
+    <string name="text_material_mission_3">3) 점령하려는 지역의 재료가 더이상 없다면(0이라면) 미션 실패입니다.</string>
+    <string name="title_time_mission">시간 미션</string>
+    <string name="text_time_mission_1">1) 미션 게임의 5단계 이후부터는 시간 제한이 있습니다.</string>
+    <string name="text_time_mission_2">2) 주어진 시간 안에 승리하지 못하면 미션 실패입니다.</string>
+    <string name="text_time_mission_3">3) 당신의 턴일때만 시간이 흘러갑니다.</string>
+    <string name="title_matchup_game">친구와 대결</string>
+    <string name="text_matchup_game_1">1) 친구에게 대결을 요청할 수 있습니다.</string>
+    <string name="text_matchup_game_2">2) 친구가 요청을 수락할 때까지 기다려야 합니다.</string>
+    <string name="text_matchup_game_3">3) 가상의 친구인 COM과 대결할 수 있습니다.</string>
+
+</resources>

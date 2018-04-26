@@ -1,0 +1,208 @@
+<resources>
+
+    <!-- 공통 -->
+    <string name="app_name">TAKE FIVE</string>
+    <string name="app_desc">TAKE FIVE is special Renju game of new concept.</string>
+    
+    <string name="err_please_retry">An error occurred.\nPlease try again later.</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="text_new">new</string>
+    
+    <!-- 구글게임서비스관련 -->
+    <string name="gamehelper_sign_in_failed">Failed to sign in. Please check your network connection and try again.</string>
+    <string name="gamehelper_app_misconfigured">The application is incorrectly configured. Check that the package name and signing certificate match the client ID created in Developer Console. Also, if the application is not yet published, check that the account you are trying to sign in with is listed as a tester account. See logs for more information.</string>
+    <string name="gamehelper_license_failed">License check failed.</string>
+    <string name="gamehelper_unknown_error">Unknown error.</string>
+    
+    <!-- 메인화면 -->
+    <string name="btn_mission_game">Mission game</string>
+    <string name="text_best_score">best score</string>
+    <string name="text_get_score">earn score</string>
+    <string name="text_final_score">final score</string>
+    <string name="text_score_format">%d pts</string>
+    <string name="btn_achievement">Achieve\n-ment</string>
+    <string name="btn_ranking">Leader\n-board</string>
+    <string name="btn_settings">Settings</string>
+    <string name="btn_share">Share</string>
+    <string name="btn_game_with_friend">Matchup game</string>
+    <string name="text_wins_count">Wins count</string>
+    <string name="text_wins_count_format">%d wins</string>
+    
+    <string name="main_message_1"><![CDATA["Hi, I am TAKE FIVE.<br>Are you a beginner?<br>First of all, play the <font color=\"#e60012\"><br>Mission game</font>~!"]]></string>
+    <string name="main_message_2"><![CDATA["Hi, I am TAKE FIVE.<br>Now, accomplish the <font color=\"#e60012\">Achievement</font>~!"]]></string>
+    <string name="main_message_3"><![CDATA["Hi, I am TAKE FIVE.<br>Do you know your ranking?<br>Check your <font color=\"#e60012\">Leaderboard</font>~!"]]></string>
+    <string name="main_message_4"><![CDATA["Hi, I am TAKE FIVE.<br>More friends, more fun!<br>Press the <font color=\"#e60012\">Share</font> button~!"]]></string>
+    <string name="main_message_5"><![CDATA["Do you want to hide the ad?<br>When you <font color=\"#e60012\">buy an item</font>, you will get 10 hints for each mission game, and this area will be filled with good sayings."]]></string>
+    <string name="main_message_6"><![CDATA["When you <font color=\"#e60012\">buy an item</font>, you will get 10 hints for each mission game, and this area will be filled with good sayings."]]></string>
+    
+    <string name="text_ad_loading">Loading ad..</string>
+    <string name="title_today_saying"><![CDATA["<font color=\"#b77250\">[Today's Saying]</font><br/>"]]></string>
+    <string name="title_today_saying_for_share"><![CDATA["[Today's Saying]"]]></string>
+    <string name="title_saying_share_dialog"><![CDATA["Share the saying with friends"]]></string>
+    
+    <!-- 미션게임 -->
+    <string name="title_notice_comment">Notice</string>
+    <string name="title_stage_format">Stage %d</string>
+    <string name="title_notice_mission_format">Mission, Stage %d!</string>
+    <string name="title_notice_mission_clear_format">Mission Clear! (Stage %d)</string>
+    <string name="title_notice_mission_fail_format">Mission Failed! (Stage %d)</string>
+    <string name="title_notice_game_clear">All Mission Clear!</string>
+    <string name="text_ufo_modal_top">Touch a dark area,\nif you want to see the hinder part.</string>
+    <string name="text_confirm_exit"><![CDATA["Do you want exit<br>the <font color=\"#e60012\">mission game</font>?"]]></string>
+    
+    <string name="text_base_score">Base Score</string>
+    <string name="text_cost_mission_score">Cost Mission</string>
+    <string name="text_material_mission_score">Mat. Mission</string>
+    <string name="text_time_mission_score">Time Mission</string>
+    <string name="text_mission_score_format">+ (%s)</string>
+    <string name="text_bonus_mission">Bonus Mission</string>
+    <string name="text_bonus_mission_success">Full( X 2 )</string>
+    <string name="text_bonus_mission_fail">Lack( X 1 )</string>
+    <string name="title_bonus_mission">Bonus Mission!</string>
+    
+    <string name="title_cost">COST</string>
+    <string name="title_material">MATERIAL</string>
+    <string name="title_time">TIME</string>
+    
+    <string name="err_unable_to_put">Occupied already.\nTry other area.</string>
+    <string name="text_continue">CONTINUE</string>
+    <string name="text_exit">EXIT</string>
+    <string name="text_go_back_to">ONE STEP BACK</string>
+    <string name="text_go_back_to_count">( remaining: %d )</string>
+    <string name="text_go_back_to_fail">Failed to step back.</string>
+    <string name="text_go_back_to_no_item_1">You spent all, 2 times.\nWhen you purchase the item,\nyou can step back 10 times.</string>
+    <string name="text_go_back_to_no_item_2">Failed to step back.\nYou spent all, 10 times.</string>
+    <string name="text_go_back_to_complete">Success to step back.</string>
+    
+    <string name="stage_mission_1_short">Occupy a continuous series of five of areas!</string>
+    <string name="stage_mission_1">Occupy a continuous series\nof five of areas!\nThat\'s the way you win.</string>
+    
+    <string name="stage_mission_2_comment">Too easy, huh?\nThe game has\njust begun.\nWatch the mission carefully!</string>
+    
+    <string name="stage_mission_2_short">Win in the given costs!</string>
+    <string name="stage_mission_2">Occupy a continuous series\nof five of areas\nin the given costs(99)!</string>
+    
+    <string name="stage_mission_3_short">Win in the given materials!</string>
+    <string name="stage_mission_3">Occupy a continuous series\nof five of areas\nin the given materials!</string>
+    <string name="stage_material_sub_mission">If the five areas\nconsist of\nsame materials,\nthe score is doubled.</string>
+    
+    <string name="stage_mission_4_comment">Oh, good job.\nThe opponent will play\nmore smartly from now on.</string>
+    
+    <string name="stage_mission_4_short">Occupy a continuous series of five of areas!</string>
+    <string name="stage_mission_4">Occupy a continuous series\nof five of areas!\nThat\'s the way you win.</string>
+    
+    <string name="stage_mission_5_short">Win in 99 seconds!</string>
+    <string name="stage_mission_5">Occupy a continuous series\nof five of areas\nin 99 seconds!</string>
+    
+    <string name="stage_mission_6_short">Win in the given costs and 99 seconds!</string>
+    <string name="stage_mission_6">Occupy a continuous series\nof five of areas\nin the given costs(80)\nand 99 seconds!</string>
+    
+    <string name="stage_mission_7_short">Win in the given materials and 99 seconds!</string>
+    <string name="stage_mission_7">Occupy a continuous series\nof five of areas\nin the given materials\nand 99 seconds!</string>
+    
+    <string name="stage_mission_8_comment">Oh my God!\nI will do my best!\nAnd, I will make the first move.</string>
+    
+    <string name="stage_mission_8_short">Win in 60 seconds!</string>
+    <string name="stage_mission_8">Occupy a continuous series\nof five of areas\nin 60 seconds!</string>
+    
+    <string name="stage_mission_9_short">Win in the given costs and 60 seconds!</string>
+    <string name="stage_mission_9">Occupy a continuous series\nof five of areas\nin the given costs(60)\nand 60 seconds!</string>
+    
+    <string name="stage_mission_10_short">Win in the given materials and 60 seconds!</string>
+    <string name="stage_mission_10">Occupy a continuous series\nof five of areas\nin the given materials\nand 60 seconds!</string>
+    
+    <string name="text_recommend_here">In stage 1, I will help you.\nI recommend here (red circle).</string>
+    <string name="text_confirm_close_message"><![CDATA["Are you sure that<br>turn helper feature <font color=\"#e60012\">OFF</font>?<br>You can turn the feature<br><font color=\"#22ac38\">ON</font>/<font color=\"#e60012\">OFF</font> in Settings."]]></string>
+    
+    <!-- 친구와 대결하기 -->
+    <string name="text_game_chat_1">The matchup has started.</string>
+    <string name="text_game_chat_2">%s make first move.</string>
+    
+    <string name="btn_apply_to_friend">Invite a friend</string>
+    <string name="btn_applied_from_friend">See invitations</string>
+    <string name="btn_game_with_com">Matchup with COM</string>
+    <string name="text_recommend_googleplus">If there are not your friends,\nLaunch Googleplus app and then search and add the friend.</string>
+    <string name="btn_launch_googleplus">Launch Googleplus</string>
+    <string name="text_win_friend">You win!!</string>
+    <string name="text_lose_friend">You lose..</string>
+    <string name="text_lose_friend_2">I\'m sorry, but try again later.</string>
+    <string name="text_invited_message">Play with me?</string>
+    <string name="btn_accept">ACCEPT</string>
+    <string name="btn_decline">DECLINE</string>
+    <string name="text_withdraw">WITHDRAW</string>
+    <string name="text_sender_cancel">The request had been cancelled.</string>
+    <string name="format_my_profile_name">%s (me)</string>
+    <string name="format_remain_time">%d secs</string>
+    <string name="text_wait">waiting</string>
+    <string name="text_me">Me</string>
+    <string name="text_coms_talk">%s, I am sorry that I cannot talk with you. Invite your friend in game.</string>
+    <string name="err_voice_recognizer">Fail to recognize voice.\nPlease try again.</string>
+    
+    <!-- 설정 -->
+    <string name="btn_bgm">Background Music</string>
+    <string name="btn_game_sound">Game Sound</string>
+    <string name="btn_invited_ok">Popup when invited</string>
+    <string name="btn_first_stage_helper">Stage 1 helper</string>
+    <string name="title_beginning_stage">Beginning stage</string>
+    <string name="text_cannot_beginning_stage">You only select a stage\nthat you have played.</string>
+    <string name="btn_buy_item">Buy an item</string>
+    <string name="text_success_buy_item">Success to buy!</string>
+    <string name="text_cancel_buy_item">cancelled</string>
+    <string name="text_fail_buy_item">Fail to buy!</string>
+    
+    <!-- 공유 -->
+    <string name="btn_share_facebook">Facebook</string>
+    <string name="btn_share_googleplus">GooglePlus</string>
+    <string name="btn_share_kakaostory">KakaoStory</string>
+    <string name="btn_share_kakaolink">KakaoTalk Link</string>
+    <string name="btn_share_linelink">Naver Line Link</string>
+    <string name="btn_share_wechatlink">WeChat Link</string>
+    <string name="btn_share_whatsapplink">WhatsApp Link</string>
+    
+    <string name="text_cancelled">Cancelled</string>
+    <string name="text_permission_not_granted">Permission not granted.</string>
+    <string name="text_facebook_not_available">Facebook is not installed or old version.</string>
+    <string name="text_share_kakaolink_success">Success to share by kakaolink.</string>
+    <string name="text_share_kakaolink_fail">Fail to share by kakaolink.</string>
+    
+    <string name="kakaostory_default_share_message">I recommend this game, TAKE FIVE.</string>
+    <string name="kakaostory_err_not_user">You are not KakaoStory user.</string>
+    <string name="kakaostory_post_success">Success to post recommendation and GooglePlay link in KakaoStory.</string>
+    <string name="link_recommend_text">Enjoy the special Renju game, TAKE FIVE.</string>
+    <string name="kakaolink_button">Play the game</string>
+
+    <string name="title_kakaostory_share">Share to KakaoStory</string>
+    <string name="btn_kakaostory_share">Share</string>
+    <string name="text_kakaostory_share_hint">What would you talk about this game?</string>
+    <string name="text_kakaostory_share_notice">I will share this messgae with GooglePlay link.</string>
+    <string name="text_wechat_link_desc">Share GooglePlay link with a friend</string>
+    
+    <!-- 게임설명 -->
+    <string name="title_info">Game Instructions</string>
+    <string name="text_ufo_introduce">To my surprise,\nthese are UFOs.</string>
+    <string name="title_common_rules">The Basic Rules</string>
+    <string name="text_common_rules_1">1) You win if your flying saucer occupy a continuous series of five of areas - horizontally, vertically, or diagonally.</string>
+    <string name="text_common_rules_2">2) Your opponent block your way.</string>
+    <string name="text_common_rules_3">3) You have to block your opponent\'s way.</string>
+    <string name="title_mission_game">The Mission Game</string>
+    <string name="text_mission_game_1">1) You get a high score if you achieve the missions.</string>
+    <string name="text_mission_game_2">2) There are 10 stages. You can clear the stage and get a score.</string>
+    <string name="title_cost_mission">The Cost Mission</string>
+    <string name="text_cost_mission_1">1) You can see this mission in stage 2, stage 6, stage 9.</string>
+    <string name="text_cost_mission_2">2) Initially you have the number, and there are numbers in game board. When you occupy a area, the number that you have will be decreased.</string>
+    <string name="text_cost_mission_3">3) Unless you win until the remaining cost is zero, you fail in your mission.</string>
+    <string name="title_material_mission">The Material Mission</string>
+    <string name="text_material_mission_1">1) You can see this mission in stage 3, stage 7, stage 10.</string>
+    <string name="text_material_mission_2">2) Initially you have three materials, and there are materials in game board. When you occupy a area, each number that you have will be decreased.</string>
+    <string name="text_material_mission_3">3) If there are not the material you need, you fail in your mission.</string>
+    <string name="title_time_mission">The Time Mission</string>
+    <string name="text_time_mission_1">1) You can see this mission since stage 5.</string>
+    <string name="text_time_mission_2">2) Initially you have the time, and you must clear the stage in that time.</string>
+    <string name="text_time_mission_3">3) The time is moving when it\'s your turn.</string>
+    <string name="title_matchup_game">The Matchup Game</string>
+    <string name="text_matchup_game_1">1) You can invite your friend.</string>
+    <string name="text_matchup_game_2">2) You have to wait for your friend\'s response.</string>
+    <string name="text_matchup_game_3">3) You can play with the virtual friend, COM.</string>
+
+</resources>

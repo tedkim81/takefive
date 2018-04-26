@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+    <!-- 메뉴화면 {{ -->
+    <include layout="@layout/game_with_friend_menus" android:id="@+id/menus_layout" />
+    <!-- }} 메뉴화면 -->
+    
+    <!-- 게임화면 {{ -->
+    <include layout="@layout/game_with_friend_game" android:id="@+id/game_layout" android:visibility="gone" />
+    <!-- }} 게임화면 -->
+    
+    <!-- 모달 영역 {{ -->
+    <com.teuskim.takefive.view.UfoAlertView
+        android:id="@+id/ufo_alert"
+        android:layout_width="match_parent"
+		android:layout_height="match_parent"
+        />
+    <!-- }} 모달 영역 -->
+    
+</RelativeLayout>

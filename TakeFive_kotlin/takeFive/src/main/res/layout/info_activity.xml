@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#fcfce1"
+	>
+	<!-- 상단헤더 {{ -->
+	<LinearLayout
+	    style="@style/Common.Hea.der"
+	    >
+	    <TextView
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+			android:text="@string/title_info"
+			style="@style/Common.TitleText"
+	        />
+	</LinearLayout>
+	<!-- }} 상단헤더 -->
+	
+	<ScrollView 
+	    android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+	    >
+	    <LinearLayout 
+		    android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:orientation="vertical"
+		    >
+		    <!-- UFO소개 {{ -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+		        >
+		        <ImageView
+		            android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/info_ufo_introduce"
+		            />
+		        <TextView
+		            android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_marginLeft="5dp"
+					android:textSize="18sp"
+					android:textColor="#37312b"
+					android:text="@string/text_ufo_introduce"
+		            />
+		    </LinearLayout>
+		    <!-- }} UFO소개 -->
+		    
+		    <TextView style="@style/Info.Title" android:text="@string/title_common_rules" />
+		    <TextView style="@style/Info.Text" android:text="@string/text_common_rules_1" />
+		    
+		    <!-- 승리조건 이미지들 {{ -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+		        >
+		        <ImageView
+		            android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/info_common_rule_1"
+		            />
+		        <ImageView
+		            android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dp"
+					android:src="@drawable/info_common_rule_2"
+		            />
+		        <ImageView
+		            android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dp"
+					android:src="@drawable/info_common_rule_3"
+		            />
+		    </LinearLayout>
+		    <!-- }} 승리조건 이미지들 -->
+		    
+		    <TextView style="@style/Info.Text" android:text="@string/text_common_rules_2" />
+		    
+		    <!-- 막는법 이미지 {{ -->
+		    <ImageView
+	            android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:src="@drawable/info_common_rule_4"
+	            />
+		    <!-- }} 막는법 이미지 -->
+		    
+		    <TextView style="@style/Info.Text" android:text="@string/text_common_rules_3" />
+		    <TextView style="@style/Info.Title" android:text="@string/title_mission_game" />
+		    <TextView style="@style/Info.Text" android:text="@string/text_mission_game_1" />
+		    <TextView style="@style/Info.Text" android:text="@string/text_mission_game_2" />
+		    
+		    <!-- 미션보드 이미지 {{ -->
+		    <ImageView
+	            android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:src="@drawable/info_mission_game_1"
+	            />
+		    <!-- }} 미션보드 이미지 -->
+		    
+		    <TextView style="@style/Info.Title" android:text="@string/title_cost_mission" />
+		    <TextView style="@style/Info.Text" android:text="@string/text_cost_mission_1" />
+		    <TextView style="@style/Info.Text" android:text="@string/text_cost_mission_2" />
+		    <TextView style="@style/Info.Text" android:text="@string/text_cost_mission_3" />
+		    <TextView style="@style/Info.Title" android:text="@string/title_material_mission" />
+		    <TextView style="@style/Info.Text" android:text="@string/text_material_mission_1" />
+		    <TextView style="@style/Info.Text" android:text="@string/text_material_mission_2" />
+		    <TextView style="@style/Info.Text" android:text="@string/text_material_mission_3" />
+		    <TextView style="@style/Info.Title" android:text="@string/title_time_mission" />
+		    <TextView style="@style/Info.Text" android:text="@string/text_time_mission_1" />
+		    <TextView style="@style/Info.Text" android:text="@string/text_time_mission_2" />
+		    <TextView style="@style/Info.Text" android:text="@string/text_time_mission_3" />
+		    <TextView style="@style/Info.Title" android:text="@string/title_matchup_game" />
+		    <TextView style="@style/Info.Text" android:text="@string/text_matchup_game_1" />
+		    <TextView style="@style/Info.Text" android:text="@string/text_matchup_game_2" />
+		    <TextView style="@style/Info.Text" android:text="@string/text_matchup_game_3" />
+		    
+		</LinearLayout>
+	</ScrollView>
+	
+</LinearLayout>

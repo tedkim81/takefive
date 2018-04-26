@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="ufo_alert_btn_text_normal">#ff766c63</color>
+	<color name="ufo_alert_btn_text_press">#80766c63</color>
+	<color name="ufo_alert_btn_subtext_normal">#ff763c33</color>
+	<color name="ufo_alert_btn_subtext_press">#80763c33</color>
+</resources>

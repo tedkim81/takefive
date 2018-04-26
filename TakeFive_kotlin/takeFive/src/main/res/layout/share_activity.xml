@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    >
+    <!-- fragment영역을 제외한 전체화면 {{ -->
+    <LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:background="#fcfce1"
+		>
+		<!-- 상단헤더 {{ -->
+		<LinearLayout
+		    style="@style/Common.Hea.der"
+		    >
+		    <ImageView 
+		        android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_marginLeft="15dp"
+				android:src="@drawable/icon_share_white"
+				android:scaleType="fitXY"
+		        />
+		    <TextView
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:text="@string/btn_share"
+				style="@style/Common.TitleText"
+		        />
+		</LinearLayout>
+		<!-- }} 상단헤더 -->
+		
+		<!-- 공유 버튼들 {{ -->
+		<ScrollView 
+		    android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+		    >
+		    <LinearLayout
+		        android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+		        >
+		        <!-- 페이스북 {{ -->
+				<Button
+				    style="@style/Share.Button" 
+				    android:id="@+id/btn_facebook"
+				    android:text="@string/btn_share_facebook"
+					android:drawableLeft="@drawable/icon_share_facebook"
+				    />
+				<!-- }} 페이스북 -->
+				
+				<!-- 구글플러스 {{ -->
+				<!--
+				<Button
+				    style="@style/Share.Button" 
+				    android:id="@+id/btn_googleplus"
+				    android:text="@string/btn_share_googleplus"
+					android:drawableLeft="@drawable/icon_share_googleplus"
+				    />
+				-->
+				<!-- }} 구글플러스 -->
+				
+				<!-- 카카오스토리 {{ -->
+				<Button
+				    style="@style/Share.Button" 
+				    android:id="@+id/btn_kakao_story"
+				    android:text="@string/btn_share_kakaostory"
+					android:drawableLeft="@drawable/icon_share_kakaostory"
+				    />
+				<!-- }} 카카오스토리 -->
+				
+				<!-- 카카오링크 {{ -->
+				<Button
+				    style="@style/Share.Button" 
+				    android:id="@+id/btn_kakao_link"
+				    android:text="@string/btn_share_kakaolink"
+					android:drawableLeft="@drawable/icon_share_kakaotalk"
+				    />
+				<!-- }} 카카오링크 -->
+				
+				<!-- 라인 {{ -->
+				<Button
+				    style="@style/Share.Button" 
+				    android:id="@+id/btn_line_link"
+				    android:text="@string/btn_share_linelink"
+					android:drawableLeft="@drawable/icon_share_line"
+				    />
+				<!-- }} 라인 -->
+				
+				<!-- 위챗 {{ -->
+				<Button
+				    style="@style/Share.Button" 
+				    android:id="@+id/btn_wechat_link"
+				    android:text="@string/btn_share_wechatlink"
+					android:drawableLeft="@drawable/icon_share_wechat"
+				    />
+				<!-- }} 위챗 -->
+				
+				<!-- 위챗 {{ -->
+				<Button
+				    style="@style/Share.Button" 
+				    android:id="@+id/btn_whatsapp_link"
+				    android:text="@string/btn_share_whatsapplink"
+					android:drawableLeft="@drawable/icon_share_whatsapp"
+				    />
+				<!-- }} 위챗 -->
+		    </LinearLayout>
+		</ScrollView>
+		<!-- }} 공유 버튼들 -->
+		
+	</LinearLayout>
+    <!-- }} fragment영역을 제외한 전체화면 -->
+    
+    <!-- fragment영역 {{ -->
+    <RelativeLayout 
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+		android:layout_height="match_parent"
+        >
+    </RelativeLayout>
+    <!-- }} fragment영역 -->
+    
+    <!-- 모달 영역 {{ -->
+    <com.teuskim.takefive.view.UfoAlertView
+        android:id="@+id/ufo_alert"
+        android:layout_width="match_parent"
+		android:layout_height="match_parent"
+        />
+    <!-- }} 모달 영역 -->
+    
+</RelativeLayout>

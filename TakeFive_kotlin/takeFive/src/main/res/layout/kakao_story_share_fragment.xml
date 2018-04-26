@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#fcfce1"
+	>
+	<!-- 상단헤더+공유버튼 {{ -->
+	<LinearLayout
+	    android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:gravity="center_vertical"
+		android:background="#717373"
+	    >
+	    <TextView
+	        android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_marginLeft="10dp"
+			android:text="@string/title_kakaostory_share"
+			android:textSize="20sp"
+			android:textColor="#ffffff"
+	        />
+	    
+	    <!-- 카카오스토리에 게시하기 버튼 {{ -->
+		<Button
+		    android:id="@+id/btn_post"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dp"
+			android:text="@string/btn_kakaostory_share"
+			android:textSize="14sp"
+			android:textColor="#766c63"
+			android:background="@drawable/btn_common_thin"
+		    />
+		<!-- }} 카카오스토리에 게시하기 버튼 -->
+		
+	</LinearLayout>
+	<!-- }} 상단헤더+공유버튼 -->
+	
+	<!-- 공유글 입력창 {{ -->
+	<EditText
+	    android:id="@+id/share_message" 
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:minLines="2"
+		android:hint="@string/text_kakaostory_share_hint"
+	    />
+	<!-- }} 공유글 입력창 -->
+	
+	<!-- 알림글 {{ -->
+	<TextView
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:gravity="center_horizontal"
+		android:text="@string/text_kakaostory_share_notice"
+		android:textSize="15sp"
+		android:textColor="#766c63"
+		android:background="@drawable/bg_chat_main"
+		/>
+	<!-- }} 알림글 -->
+	
+</LinearLayout>
